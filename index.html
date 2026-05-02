@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="ja" style="background:#0e0e0a;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Tower of Life — なぜ私は社会のしくみを問い始めたのか</title>
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  background: #0e0e0a;
+  color: #d8d4c5;
+  line-height: 1.85;
+  font-size: 16px;
+}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 32px 96px;
+  background: #0e0e0a;
+}
+header.intro {
+  margin-bottom: 96px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid #2a2a22;
+  text-align: center;
+}
+header.intro .title-en {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: #6dc358;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+header.intro h1 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 14px;
+  letter-spacing: 0.04em;
+  color: #f0ecdd;
+  line-height: 1.5;
+}
+header.intro .lead {
+  font-size: 14px;
+  color: #8a8676;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+.proto-note {
+  margin: 56px 0 0;
+  padding: 24px 26px;
+  background: #1a1a14;
+  border: 1px solid #2a2a22;
+  border-left: 3px solid #d4a554;
+  border-radius: 4px;
+  text-align: left;
+}
+.proto-note .proto-label {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #d4a554;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.proto-note p {
+  margin: 0 0 0.9em;
+  font-size: 14px;
+  color: #a8a394;
+  line-height: 1.8;
+}
+.proto-note p:last-child {
+  margin-bottom: 0;
+}
+.proto-note strong {
+  color: #d8d4c5;
+  font-weight: 500;
+}
+.chapter {
+  margin-bottom: 96px;
+}
+.chapter h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 36px;
+  padding-left: 18px;
+  border-left: 2px solid #5cb84a;
+  letter-spacing: 0.04em;
+  color: #f0ecdd;
+}
+.chapter p {
+  margin: 0 0 1.4em;
+}
+.scene {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.scene svg {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+.coda {
+  margin: 40px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid #2a2a22;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  color: #a8a394;
+  line-height: 1.9;
+  font-style: italic;
+  text-align: center;
+}
+.coda .stamp {
+  display: block;
+  margin-top: 14px;
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  color: #6dc358;
+  letter-spacing: 0.18em;
+}
+.tower {
+  margin: 40px auto 0;
+  padding: 0;
+  background: #14140f;
+  border: 1px solid #2a2a22;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.tower svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.afterword {
+  margin-top: 120px;
+  padding-top: 64px;
+  border-top: 2px solid #5cb84a;
+}
+.afterword h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 16px;
+  color: #f0ecdd;
+  letter-spacing: 0.03em;
+}
+.afterword .afterword-lead {
+  font-size: 14px;
+  color: #8a8676;
+  margin: 0 0 48px;
+  letter-spacing: 0.05em;
+}
+.afterword h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 56px 0 20px;
+  color: #f0ecdd;
+  letter-spacing: 0.03em;
+}
+.afterword p {
+  margin: 0 0 1.3em;
+  color: #c8c4b5;
+}
+.afterword strong {
+  color: #f0ecdd;
+  font-weight: 500;
+}
+.afterword .em-green {
+  color: #9ed681;
+  font-weight: 500;
+}
+.afterword .em-amber {
+  color: #c89868;
+  font-weight: 500;
+}
+.afterword .em-red {
+  color: #c98080;
+  font-weight: 500;
+}
+.app-callout {
+  margin: 56px 0 0;
+  padding: 32px 28px;
+  background: #1a1a14;
+  border: 1px solid #2a2a22;
+  border-radius: 4px;
+  text-align: center;
+}
+.app-callout .app-label {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: #6dc358;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.app-callout h3 {
+  margin: 0 0 14px;
+  font-size: 19px;
+  color: #f0ecdd;
+}
+.app-callout p {
+  margin: 0 0 20px;
+  font-size: 14.5px;
+  color: #a8a394;
+  line-height: 1.75;
+}
+.app-callout .app-link {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #5cb84a;
+  color: #0e0e0a;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+}
+footer.outro {
+  margin-top: 96px;
+  padding-top: 48px;
+  border-top: 1px solid #2a2a22;
+  font-size: 13px;
+  color: #6a6657;
+  text-align: center;
+}
+footer.outro .signature {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.18em;
+  color: #6dc358;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+@media (max-width: 600px) {
+  .container { padding: 40px 20px 64px; }
+  header.intro h1 { font-size: 21px; }
+  .chapter h2 { font-size: 19px; }
+  .afterword h2 { font-size: 20px; }
+  body { font-size: 15px; }
+}
+
+.steel { stroke: #5a5547; stroke-width: 0.8; fill: none; opacity: 0.7; }
+.steel-cross { stroke: #5a5547; stroke-width: 0.5; fill: none; opacity: 0.5; }
+.layer-label { fill: #7a7563; opacity: 0.85; font-size: 12px; }
+.layer-label-active { fill: #e8e3d4; opacity: 1; font-size: 12px; }
+.layer-label-shadow { fill: #c98080; opacity: 0.95; font-size: 12px; }
+.layer-label-mixed { fill: #e8e3d4; opacity: 0.92; font-size: 12px; }
+.tower-title { fill: #e8e3d4; font-size: 14px; font-weight: 500; }
+.tower-subtitle { fill: #a8a394; font-size: 12px; }
+.area-mature { fill: #5cb84a; opacity: 0.10; }
+.area-shadow { fill: #a04545; opacity: 0.18; }
+.area-self { fill: #5cb84a; opacity: 0.13; }
+.vine-main { stroke: #5cb84a; stroke-width: 2.4; fill: none; stroke-linecap: round; }
+.vine-branch { stroke: #6dc358; stroke-width: 1.8; fill: none; stroke-linecap: round; }
+.leaf-stem { stroke: #6dc358; stroke-width: 0.8; fill: none; stroke-linecap: round; }
+.leaf-stem-dry { stroke: #8a6838; stroke-width: 0.7; fill: none; stroke-linecap: round; }
+.shadow-line { stroke: #c98080; stroke-width: 1.2; fill: none; stroke-linecap: round; opacity: 0.55; }
+.intent-vine { stroke: #6dc358; stroke-width: 1.4; fill: none; stroke-linecap: round; opacity: 0.6; stroke-dasharray: 3 2; }
+.figure { fill: #e8e3d4; }
+</style>
+</head>
+<body style="background:#0e0e0a;color:#d8d4c5;margin:0;min-height:100vh;">
+<div class="container" style="background:#0e0e0a;">
+
+<header class="intro">
+<p class="title-en">Your Tower of Life</p>
+<h1>なぜ私は社会のしくみを問い始めたのか</h1>
+<p class="lead">ヒロシ、四十八歳の振り返り</p>
+
+<div class="proto-note">
+<span class="proto-label">prototype — v0.2</span>
+<p>思想フレーム（S ON S）を物語形式で導入する実験版。文面の完成度は2割。骨格と流れの検証段階です。</p>
+</div>
+
+</header>
+
+<svg width="0" height="0" style="position: absolute;">
+<defs>
+
+<symbol id="leaf" viewBox="-10 -8 20 16" overflow="visible">
+<path d="M 0 -7 Q -5 -7 -8 -2 Q -10 3 -7 6 Q -3 8 0 5 Q 3 8 7 6 Q 10 3 8 -2 Q 5 -7 0 -7 Z" fill="currentColor"/>
+</symbol>
+
+<symbol id="leaf-dry" viewBox="-10 -8 20 16" overflow="visible">
+<path d="M 0 -6 Q -4 -7 -7 -3 Q -8 0 -6 3 Q -3 4 -1 2 Q 0 5 2 4 Q 5 6 7 2 Q 8 -1 5 -5 Q 2 -7 0 -6 Z M -4 -3 L -2 1 M 1 -2 L 4 0" fill="currentColor" stroke="#5a4020" stroke-width="0.4"/>
+</symbol>
+
+<symbol id="tower-skeleton" viewBox="0 0 680 720" overflow="visible">
+<line x1="280" y1="120" x2="280" y2="660" class="steel"/>
+<line x1="400" y1="120" x2="400" y2="660" class="steel"/>
+<g class="steel-cross">
+<line x1="280" y1="120" x2="400" y2="120"/><line x1="280" y1="120" x2="400" y2="195"/><line x1="400" y1="120" x2="280" y2="195"/>
+<line x1="280" y1="195" x2="400" y2="195"/><line x1="280" y1="195" x2="400" y2="270"/><line x1="400" y1="195" x2="280" y2="270"/>
+<line x1="280" y1="270" x2="400" y2="270"/><line x1="280" y1="270" x2="400" y2="345"/><line x1="400" y1="270" x2="280" y2="345"/>
+<line x1="280" y1="345" x2="400" y2="345"/><line x1="280" y1="345" x2="400" y2="420"/><line x1="400" y1="345" x2="280" y2="420"/>
+<line x1="280" y1="420" x2="400" y2="420"/><line x1="280" y1="420" x2="400" y2="495"/><line x1="400" y1="420" x2="280" y2="495"/>
+<line x1="280" y1="495" x2="400" y2="495"/><line x1="280" y1="495" x2="400" y2="570"/><line x1="400" y1="495" x2="280" y2="570"/>
+<line x1="280" y1="570" x2="400" y2="570"/><line x1="280" y1="570" x2="400" y2="645"/><line x1="400" y1="570" x2="280" y2="645"/>
+<line x1="280" y1="645" x2="400" y2="645"/>
+</g>
+<line x1="280" y1="120" x2="400" y2="120" class="steel"/>
+<line x1="280" y1="195" x2="400" y2="195" class="steel"/>
+<line x1="280" y1="270" x2="400" y2="270" class="steel"/>
+<line x1="280" y1="345" x2="400" y2="345" class="steel"/>
+<line x1="280" y1="420" x2="400" y2="420" class="steel"/>
+<line x1="280" y1="495" x2="400" y2="495" class="steel"/>
+<line x1="280" y1="570" x2="400" y2="570" class="steel"/>
+<line x1="280" y1="645" x2="400" y2="645" class="steel"/>
+</symbol>
+
+<symbol id="vine-family" viewBox="0 0 680 720" overflow="visible">
+<path d="M 332 120 L 322 140 L 314 160 L 318 180 L 322 195" class="vine-main"/>
+<path d="M 348 120 L 358 140 L 366 160 L 362 180 L 358 195" class="vine-main"/>
+<path d="M 322 140 L 308 144 L 296 150" class="vine-branch"/>
+<path d="M 358 140 L 372 144 L 384 150" class="vine-branch"/>
+<path d="M 314 160 L 300 162 L 286 166" class="vine-branch"/>
+<path d="M 366 160 L 380 162 L 394 166" class="vine-branch"/>
+<path d="M 318 180 L 304 184 L 292 190" class="vine-branch"/>
+<path d="M 362 180 L 376 184 L 388 190" class="vine-branch"/>
+<path d="M 322 140 L 332 144" class="vine-branch"/>
+<path d="M 358 140 L 348 144" class="vine-branch"/>
+<path d="M 314 160 L 326 164" class="vine-branch"/>
+<path d="M 366 160 L 354 164" class="vine-branch"/>
+<path d="M 318 180 L 328 186" class="vine-branch"/>
+<path d="M 362 180 L 352 186" class="vine-branch"/>
+<line x1="296" y1="150" x2="288" y2="142" class="leaf-stem"/>
+<use href="#leaf" x="288" y="142" width="14" height="11" transform="rotate(-70 288 142)" color="#5cb84a"/>
+<line x1="384" y1="150" x2="392" y2="142" class="leaf-stem"/>
+<use href="#leaf" x="392" y="142" width="14" height="11" transform="rotate(70 392 142)" color="#5cb84a"/>
+<line x1="296" y1="150" x2="293" y2="158" class="leaf-stem"/>
+<use href="#leaf" x="293" y="158" width="12" height="10" transform="rotate(-110 293 158)" color="#7ac963"/>
+<line x1="384" y1="150" x2="387" y2="158" class="leaf-stem"/>
+<use href="#leaf" x="387" y="158" width="12" height="10" transform="rotate(110 387 158)" color="#7ac963"/>
+<line x1="308" y1="144" x2="302" y2="138" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="302" y="138" width="10" height="8" transform="rotate(-60 302 138)" color="#a87838"/>
+<line x1="372" y1="144" x2="378" y2="138" class="leaf-stem"/>
+<use href="#leaf" x="378" y="138" width="12" height="10" transform="rotate(60 378 138)" color="#7ac963"/>
+<line x1="286" y1="166" x2="278" y2="172" class="leaf-stem"/>
+<use href="#leaf" x="278" y="172" width="14" height="11" transform="rotate(-100 278 172)" color="#5cb84a"/>
+<line x1="394" y1="166" x2="402" y2="172" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="402" y="172" width="11" height="9" transform="rotate(100 402 172)" color="#a87838"/>
+<line x1="300" y1="162" x2="298" y2="170" class="leaf-stem"/>
+<use href="#leaf" x="298" y="170" width="11" height="9" transform="rotate(-110 298 170)" color="#7ac963"/>
+<line x1="380" y1="162" x2="382" y2="170" class="leaf-stem"/>
+<use href="#leaf" x="382" y="170" width="11" height="9" transform="rotate(110 382 170)" color="#7ac963"/>
+<line x1="292" y1="190" x2="285" y2="195" class="leaf-stem"/>
+<use href="#leaf" x="285" y="195" width="13" height="10" transform="rotate(-110 285 195)" color="#5cb84a"/>
+<line x1="388" y1="190" x2="395" y2="195" class="leaf-stem"/>
+<use href="#leaf" x="395" y="195" width="13" height="10" transform="rotate(110 395 195)" color="#5cb84a"/>
+<line x1="304" y1="184" x2="302" y2="192" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="302" y="192" width="10" height="8" transform="rotate(-110 302 192)" color="#a87838"/>
+<line x1="376" y1="184" x2="378" y2="192" class="leaf-stem"/>
+<use href="#leaf" x="378" y="192" width="11" height="9" transform="rotate(110 378 192)" color="#7ac963"/>
+<line x1="332" y1="144" x2="335" y2="151" class="leaf-stem"/>
+<use href="#leaf" x="335" y="151" width="10" height="8" transform="rotate(160 335 151)" color="#9ed681"/>
+<line x1="348" y1="144" x2="345" y2="151" class="leaf-stem"/>
+<use href="#leaf" x="345" y="151" width="10" height="8" transform="rotate(-160 345 151)" color="#9ed681"/>
+<line x1="326" y1="164" x2="330" y2="170" class="leaf-stem"/>
+<use href="#leaf" x="330" y="170" width="10" height="8" transform="rotate(20 330 170)" color="#9ed681"/>
+<line x1="354" y1="164" x2="350" y2="170" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="350" y="170" width="9" height="7" transform="rotate(-20 350 170)" color="#a87838"/>
+<line x1="328" y1="186" x2="332" y2="193" class="leaf-stem"/>
+<use href="#leaf" x="332" y="193" width="11" height="9" transform="rotate(20 332 193)" color="#7ac963"/>
+<line x1="352" y1="186" x2="348" y2="193" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="348" y="193" width="9" height="7" transform="rotate(-20 348 193)" color="#a87838"/>
+</symbol>
+
+<symbol id="shadow-school" viewBox="0 0 680 720" overflow="visible">
+<line x1="290" y1="278" x2="305" y2="338" class="shadow-line"/>
+<line x1="305" y1="278" x2="320" y2="338" class="shadow-line"/>
+<line x1="320" y1="278" x2="335" y2="338" class="shadow-line"/>
+<line x1="335" y1="278" x2="350" y2="338" class="shadow-line"/>
+<line x1="350" y1="278" x2="365" y2="338" class="shadow-line"/>
+<line x1="365" y1="278" x2="380" y2="338" class="shadow-line"/>
+</symbol>
+
+<symbol id="shadow-school-half" viewBox="0 0 680 720" overflow="visible">
+<line x1="290" y1="278" x2="298" y2="305" class="shadow-line"/>
+<line x1="305" y1="278" x2="313" y2="305" class="shadow-line"/>
+<line x1="320" y1="278" x2="328" y2="305" class="shadow-line"/>
+<line x1="335" y1="278" x2="343" y2="305" class="shadow-line"/>
+<line x1="350" y1="278" x2="358" y2="305" class="shadow-line"/>
+<line x1="365" y1="278" x2="373" y2="305" class="shadow-line"/>
+</symbol>
+
+<symbol id="vine-nation" viewBox="0 0 680 720" overflow="visible">
+<path d="M 322 195 L 318 215 L 322 240 L 316 265 L 320 290 L 314 315 L 320 345 L 318 375 L 322 410" class="vine-main"/>
+<path d="M 358 195 L 362 215 L 358 240 L 364 265 L 360 290 L 366 315 L 360 345 L 362 375 L 358 410" class="vine-main"/>
+<path d="M 318 215 L 304 220 L 290 226" class="vine-branch"/>
+<path d="M 362 215 L 376 220 L 390 226" class="vine-branch"/>
+<path d="M 322 240 L 308 244 L 295 250" class="vine-branch"/>
+<path d="M 358 240 L 372 244 L 385 250" class="vine-branch"/>
+<path d="M 316 265 L 302 270 L 288 275" class="vine-branch"/>
+<path d="M 364 265 L 378 270 L 392 275" class="vine-branch"/>
+<path d="M 320 290 L 306 295 L 292 300" class="vine-branch"/>
+<path d="M 360 290 L 374 295 L 388 300" class="vine-branch"/>
+<path d="M 314 315 L 300 320 L 286 325" class="vine-branch"/>
+<path d="M 366 315 L 380 320 L 394 325" class="vine-branch"/>
+<path d="M 320 345 L 304 350 L 290 355" class="vine-branch"/>
+<path d="M 360 345 L 376 350 L 390 355" class="vine-branch"/>
+<path d="M 318 375 L 304 380 L 290 385" class="vine-branch"/>
+<path d="M 362 375 L 376 380 L 390 385" class="vine-branch"/>
+<path d="M 322 410 L 308 408 L 295 405" class="vine-branch"/>
+<path d="M 358 410 L 372 408 L 385 405" class="vine-branch"/>
+<path d="M 318 215 L 332 218" class="vine-branch"/>
+<path d="M 362 215 L 348 218" class="vine-branch"/>
+<path d="M 316 265 L 330 268" class="vine-branch"/>
+<path d="M 364 265 L 350 268" class="vine-branch"/>
+<path d="M 314 315 L 328 318" class="vine-branch"/>
+<path d="M 366 315 L 352 318" class="vine-branch"/>
+<path d="M 318 375 L 332 378" class="vine-branch"/>
+<path d="M 362 375 L 348 378" class="vine-branch"/>
+</symbol>
+
+<symbol id="leaves-nation-green" viewBox="0 0 680 720" overflow="visible">
+<line x1="290" y1="226" x2="282" y2="220" class="leaf-stem"/>
+<use href="#leaf" x="282" y="220" width="14" height="11" transform="rotate(-90 282 220)" color="#5cb84a"/>
+<line x1="390" y1="226" x2="398" y2="220" class="leaf-stem"/>
+<use href="#leaf" x="398" y="220" width="14" height="11" transform="rotate(90 398 220)" color="#5cb84a"/>
+<line x1="295" y1="250" x2="287" y2="245" class="leaf-stem"/>
+<use href="#leaf" x="287" y="245" width="13" height="10" transform="rotate(-80 287 245)" color="#7ac963"/>
+<line x1="385" y1="250" x2="393" y2="245" class="leaf-stem"/>
+<use href="#leaf" x="393" y="245" width="13" height="10" transform="rotate(80 393 245)" color="#7ac963"/>
+<line x1="288" y1="275" x2="278" y2="270" class="leaf-stem"/>
+<use href="#leaf" x="278" y="270" width="14" height="11" transform="rotate(-100 278 270)" color="#5cb84a"/>
+<line x1="392" y1="275" x2="402" y2="270" class="leaf-stem"/>
+<use href="#leaf" x="402" y="270" width="14" height="11" transform="rotate(100 402 270)" color="#5cb84a"/>
+<line x1="292" y1="300" x2="284" y2="295" class="leaf-stem"/>
+<use href="#leaf" x="284" y="295" width="13" height="10" transform="rotate(-90 284 295)" color="#7ac963"/>
+<line x1="388" y1="300" x2="396" y2="295" class="leaf-stem"/>
+<use href="#leaf" x="396" y="295" width="13" height="10" transform="rotate(90 396 295)" color="#7ac963"/>
+<line x1="286" y1="325" x2="278" y2="320" class="leaf-stem"/>
+<use href="#leaf" x="278" y="320" width="14" height="11" transform="rotate(-90 278 320)" color="#5cb84a"/>
+<line x1="394" y1="325" x2="402" y2="320" class="leaf-stem"/>
+<use href="#leaf" x="402" y="320" width="14" height="11" transform="rotate(90 402 320)" color="#5cb84a"/>
+<line x1="290" y1="355" x2="282" y2="360" class="leaf-stem"/>
+<use href="#leaf" x="282" y="360" width="13" height="10" transform="rotate(-100 282 360)" color="#7ac963"/>
+<line x1="390" y1="355" x2="398" y2="360" class="leaf-stem"/>
+<use href="#leaf" x="398" y="360" width="13" height="10" transform="rotate(100 398 360)" color="#7ac963"/>
+<line x1="290" y1="385" x2="282" y2="390" class="leaf-stem"/>
+<use href="#leaf" x="282" y="390" width="14" height="11" transform="rotate(-110 282 390)" color="#5cb84a"/>
+<line x1="390" y1="385" x2="398" y2="390" class="leaf-stem"/>
+<use href="#leaf" x="398" y="390" width="14" height="11" transform="rotate(110 398 390)" color="#5cb84a"/>
+<line x1="295" y1="405" x2="287" y2="410" class="leaf-stem"/>
+<use href="#leaf" x="287" y="410" width="13" height="10" transform="rotate(-110 287 410)" color="#7ac963"/>
+<line x1="385" y1="405" x2="393" y2="410" class="leaf-stem"/>
+<use href="#leaf" x="393" y="410" width="13" height="10" transform="rotate(110 393 410)" color="#7ac963"/>
+<line x1="304" y1="220" x2="298" y2="228" class="leaf-stem"/>
+<use href="#leaf" x="298" y="228" width="11" height="9" transform="rotate(-120 298 228)" color="#9ed681"/>
+<line x1="376" y1="220" x2="382" y2="228" class="leaf-stem"/>
+<use href="#leaf" x="382" y="228" width="11" height="9" transform="rotate(120 382 228)" color="#9ed681"/>
+<line x1="332" y1="218" x2="335" y2="225" class="leaf-stem"/>
+<use href="#leaf" x="335" y="225" width="10" height="8" transform="rotate(160 335 225)" color="#9ed681"/>
+<line x1="348" y1="218" x2="345" y2="225" class="leaf-stem"/>
+<use href="#leaf" x="345" y="225" width="10" height="8" transform="rotate(-160 345 225)" color="#9ed681"/>
+<line x1="330" y1="268" x2="333" y2="275" class="leaf-stem"/>
+<use href="#leaf" x="333" y="275" width="10" height="8" transform="rotate(160 333 275)" color="#9ed681"/>
+<line x1="350" y1="268" x2="347" y2="275" class="leaf-stem"/>
+<use href="#leaf" x="347" y="275" width="10" height="8" transform="rotate(-160 347 275)" color="#9ed681"/>
+<line x1="328" y1="318" x2="331" y2="325" class="leaf-stem"/>
+<use href="#leaf" x="331" y="325" width="10" height="8" transform="rotate(160 331 325)" color="#9ed681"/>
+<line x1="352" y1="318" x2="349" y2="325" class="leaf-stem"/>
+<use href="#leaf" x="349" y="325" width="10" height="8" transform="rotate(-160 349 325)" color="#9ed681"/>
+<line x1="332" y1="378" x2="335" y2="385" class="leaf-stem"/>
+<use href="#leaf" x="335" y="385" width="10" height="8" transform="rotate(160 335 385)" color="#9ed681"/>
+<line x1="348" y1="378" x2="345" y2="385" class="leaf-stem"/>
+<use href="#leaf" x="345" y="385" width="10" height="8" transform="rotate(-160 345 385)" color="#9ed681"/>
+</symbol>
+
+<symbol id="leaves-nation-aged" viewBox="0 0 680 720" overflow="visible">
+<line x1="290" y1="226" x2="282" y2="220" class="leaf-stem"/>
+<use href="#leaf" x="282" y="220" width="14" height="11" transform="rotate(-90 282 220)" color="#5cb84a"/>
+<line x1="390" y1="226" x2="398" y2="220" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="398" y="220" width="11" height="9" transform="rotate(90 398 220)" color="#a87838"/>
+<line x1="295" y1="250" x2="287" y2="245" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="287" y="245" width="11" height="9" transform="rotate(-80 287 245)" color="#a87838"/>
+<line x1="385" y1="250" x2="393" y2="245" class="leaf-stem"/>
+<use href="#leaf" x="393" y="245" width="13" height="10" transform="rotate(80 393 245)" color="#7ac963"/>
+<line x1="288" y1="275" x2="278" y2="270" class="leaf-stem"/>
+<use href="#leaf" x="278" y="270" width="14" height="11" transform="rotate(-100 278 270)" color="#5cb84a"/>
+<line x1="392" y1="275" x2="402" y2="270" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="402" y="270" width="11" height="9" transform="rotate(100 402 270)" color="#a87838"/>
+<line x1="292" y1="300" x2="284" y2="295" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="284" y="295" width="11" height="9" transform="rotate(-90 284 295)" color="#a87838"/>
+<line x1="388" y1="300" x2="396" y2="295" class="leaf-stem"/>
+<use href="#leaf" x="396" y="295" width="13" height="10" transform="rotate(90 396 295)" color="#7ac963"/>
+<line x1="286" y1="325" x2="278" y2="320" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="278" y="320" width="11" height="9" transform="rotate(-90 278 320)" color="#a87838"/>
+<line x1="394" y1="325" x2="402" y2="320" class="leaf-stem"/>
+<use href="#leaf" x="402" y="320" width="14" height="11" transform="rotate(90 402 320)" color="#5cb84a"/>
+<line x1="290" y1="355" x2="282" y2="360" class="leaf-stem"/>
+<use href="#leaf" x="282" y="360" width="13" height="10" transform="rotate(-100 282 360)" color="#7ac963"/>
+<line x1="390" y1="355" x2="398" y2="360" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="398" y="360" width="11" height="9" transform="rotate(100 398 360)" color="#a87838"/>
+<line x1="290" y1="385" x2="282" y2="390" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="282" y="390" width="11" height="9" transform="rotate(-110 282 390)" color="#a87838"/>
+<line x1="390" y1="385" x2="398" y2="390" class="leaf-stem"/>
+<use href="#leaf" x="398" y="390" width="14" height="11" transform="rotate(110 398 390)" color="#5cb84a"/>
+<line x1="295" y1="405" x2="287" y2="410" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="287" y="410" width="11" height="9" transform="rotate(-110 287 410)" color="#a87838"/>
+<line x1="385" y1="405" x2="393" y2="410" class="leaf-stem"/>
+<use href="#leaf" x="393" y="410" width="13" height="10" transform="rotate(110 393 410)" color="#7ac963"/>
+<line x1="304" y1="220" x2="298" y2="228" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="298" y="228" width="9" height="7" transform="rotate(-120 298 228)" color="#a87838"/>
+<line x1="376" y1="220" x2="382" y2="228" class="leaf-stem"/>
+<use href="#leaf" x="382" y="228" width="11" height="9" transform="rotate(120 382 228)" color="#9ed681"/>
+<line x1="332" y1="218" x2="335" y2="225" class="leaf-stem"/>
+<use href="#leaf" x="335" y="225" width="10" height="8" transform="rotate(160 335 225)" color="#9ed681"/>
+<line x1="348" y1="218" x2="345" y2="225" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="345" y="225" width="9" height="7" transform="rotate(-160 345 225)" color="#a87838"/>
+<line x1="330" y1="268" x2="333" y2="275" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="333" y="275" width="9" height="7" transform="rotate(160 333 275)" color="#a87838"/>
+<line x1="350" y1="268" x2="347" y2="275" class="leaf-stem"/>
+<use href="#leaf" x="347" y="275" width="10" height="8" transform="rotate(-160 347 275)" color="#9ed681"/>
+<line x1="328" y1="318" x2="331" y2="325" class="leaf-stem"/>
+<use href="#leaf" x="331" y="325" width="10" height="8" transform="rotate(160 331 325)" color="#9ed681"/>
+<line x1="352" y1="318" x2="349" y2="325" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="349" y="325" width="9" height="7" transform="rotate(-160 349 325)" color="#a87838"/>
+<line x1="332" y1="378" x2="335" y2="385" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="335" y="385" width="9" height="7" transform="rotate(160 335 385)" color="#a87838"/>
+<line x1="348" y1="378" x2="345" y2="385" class="leaf-stem"/>
+<use href="#leaf" x="345" y="385" width="10" height="8" transform="rotate(-160 345 385)" color="#9ed681"/>
+</symbol>
+
+<symbol id="vine-self" viewBox="0 0 680 720" overflow="visible">
+<path d="M 332 90 L 326 100 L 320 110 L 322 118" class="vine-branch"/>
+<path d="M 348 90 L 354 100 L 360 110 L 358 118" class="vine-branch"/>
+<path d="M 326 100 L 314 102" class="vine-branch"/>
+<path d="M 354 100 L 366 102" class="vine-branch"/>
+<path d="M 320 110 L 308 112" class="vine-branch"/>
+<path d="M 360 110 L 372 112" class="vine-branch"/>
+<line x1="314" y1="102" x2="306" y2="96" class="leaf-stem"/>
+<use href="#leaf" x="306" y="96" width="12" height="10" transform="rotate(-70 306 96)" color="#5cb84a"/>
+<line x1="366" y1="102" x2="374" y2="96" class="leaf-stem"/>
+<use href="#leaf" x="374" y="96" width="12" height="10" transform="rotate(70 374 96)" color="#5cb84a"/>
+<line x1="308" y1="112" x2="300" y2="106" class="leaf-stem"/>
+<use href="#leaf" x="300" y="106" width="11" height="9" transform="rotate(-70 300 106)" color="#7ac963"/>
+<line x1="372" y1="112" x2="380" y2="106" class="leaf-stem"/>
+<use href="#leaf" x="380" y="106" width="11" height="9" transform="rotate(70 380 106)" color="#7ac963"/>
+<line x1="308" y1="112" x2="305" y2="118" class="leaf-stem"/>
+<use href="#leaf" x="305" y="118" width="10" height="8" transform="rotate(-110 305 118)" color="#5cb84a"/>
+<line x1="372" y1="112" x2="375" y2="118" class="leaf-stem"/>
+<use href="#leaf" x="375" y="118" width="10" height="8" transform="rotate(110 375 118)" color="#5cb84a"/>
+</symbol>
+
+<symbol id="vine-family-business" viewBox="0 0 680 720" overflow="visible">
+<path d="M 332 308 L 326 318 L 320 330 L 322 345" class="vine-main"/>
+<path d="M 348 308 L 354 318 L 360 330 L 358 345" class="vine-main"/>
+<path d="M 326 318 L 312 322 L 300 326" class="vine-branch"/>
+<path d="M 354 318 L 368 322 L 380 326" class="vine-branch"/>
+<path d="M 320 330 L 306 334 L 294 338" class="vine-branch"/>
+<path d="M 360 330 L 374 334 L 386 338" class="vine-branch"/>
+<path d="M 326 318 L 335 320" class="vine-branch"/>
+<path d="M 354 318 L 345 320" class="vine-branch"/>
+<line x1="300" y1="326" x2="292" y2="320" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="292" y="320" width="10" height="8" transform="rotate(-80 292 320)" color="#a87838"/>
+<line x1="380" y1="326" x2="388" y2="320" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="388" y="320" width="10" height="8" transform="rotate(80 388 320)" color="#a87838"/>
+<line x1="312" y1="322" x2="306" y2="316" class="leaf-stem"/>
+<use href="#leaf" x="306" y="316" width="11" height="9" transform="rotate(-70 306 316)" color="#7ac963"/>
+<line x1="368" y1="322" x2="374" y2="316" class="leaf-stem"/>
+<use href="#leaf" x="374" y="316" width="11" height="9" transform="rotate(70 374 316)" color="#7ac963"/>
+<line x1="294" y1="338" x2="286" y2="342" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="286" y="342" width="10" height="8" transform="rotate(-100 286 342)" color="#a87838"/>
+<line x1="386" y1="338" x2="394" y2="342" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="394" y="342" width="10" height="8" transform="rotate(100 394 342)" color="#a87838"/>
+<line x1="306" y1="334" x2="302" y2="340" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="302" y="340" width="9" height="7" transform="rotate(-110 302 340)" color="#a87838"/>
+<line x1="374" y1="334" x2="378" y2="340" class="leaf-stem"/>
+<use href="#leaf" x="378" y="340" width="10" height="8" transform="rotate(110 378 340)" color="#5cb84a"/>
+<line x1="335" y1="320" x2="338" y2="326" class="leaf-stem"/>
+<use href="#leaf" x="338" y="326" width="10" height="8" transform="rotate(160 338 326)" color="#9ed681"/>
+<line x1="345" y1="320" x2="342" y2="326" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="342" y="326" width="9" height="7" transform="rotate(-160 342 326)" color="#a87838"/>
+</symbol>
+
+<symbol id="vine-workplace" viewBox="0 0 680 720" overflow="visible">
+<path d="M 322 345 L 318 360 L 322 380 L 318 400 L 322 415" class="vine-main"/>
+<path d="M 358 345 L 362 360 L 358 380 L 362 400 L 358 415" class="vine-main"/>
+<path d="M 318 360 L 304 363 L 290 366" class="vine-branch"/>
+<path d="M 362 360 L 376 363 L 390 366" class="vine-branch"/>
+<path d="M 322 380 L 308 383 L 295 386" class="vine-branch"/>
+<path d="M 358 380 L 372 383 L 385 386" class="vine-branch"/>
+<path d="M 318 400 L 304 403 L 290 406" class="vine-branch"/>
+<path d="M 362 400 L 376 403 L 390 406" class="vine-branch"/>
+<path d="M 318 360 L 332 363" class="vine-branch"/>
+<path d="M 362 360 L 348 363" class="vine-branch"/>
+<path d="M 322 380 L 335 383" class="vine-branch"/>
+<path d="M 358 380 L 345 383" class="vine-branch"/>
+<line x1="290" y1="366" x2="282" y2="362" class="leaf-stem"/>
+<use href="#leaf" x="282" y="362" width="13" height="10" transform="rotate(-90 282 362)" color="#5cb84a"/>
+<line x1="390" y1="366" x2="398" y2="362" class="leaf-stem"/>
+<use href="#leaf" x="398" y="362" width="13" height="10" transform="rotate(90 398 362)" color="#5cb84a"/>
+<line x1="295" y1="386" x2="287" y2="382" class="leaf-stem"/>
+<use href="#leaf" x="287" y="382" width="12" height="10" transform="rotate(-90 287 382)" color="#7ac963"/>
+<line x1="385" y1="386" x2="393" y2="382" class="leaf-stem"/>
+<use href="#leaf" x="393" y="382" width="12" height="10" transform="rotate(90 393 382)" color="#7ac963"/>
+<line x1="290" y1="406" x2="282" y2="410" class="leaf-stem"/>
+<use href="#leaf" x="282" y="410" width="13" height="10" transform="rotate(-100 282 410)" color="#5cb84a"/>
+<line x1="390" y1="406" x2="398" y2="410" class="leaf-stem"/>
+<use href="#leaf" x="398" y="410" width="13" height="10" transform="rotate(100 398 410)" color="#5cb84a"/>
+<line x1="304" y1="363" x2="298" y2="370" class="leaf-stem"/>
+<use href="#leaf" x="298" y="370" width="11" height="9" transform="rotate(-120 298 370)" color="#7ac963"/>
+<line x1="376" y1="363" x2="382" y2="370" class="leaf-stem"/>
+<use href="#leaf" x="382" y="370" width="11" height="9" transform="rotate(120 382 370)" color="#7ac963"/>
+<line x1="308" y1="383" x2="302" y2="390" class="leaf-stem"/>
+<use href="#leaf" x="302" y="390" width="11" height="9" transform="rotate(-120 302 390)" color="#5cb84a"/>
+<line x1="372" y1="383" x2="378" y2="390" class="leaf-stem"/>
+<use href="#leaf" x="378" y="390" width="11" height="9" transform="rotate(120 378 390)" color="#5cb84a"/>
+<line x1="332" y1="363" x2="335" y2="370" class="leaf-stem"/>
+<use href="#leaf" x="335" y="370" width="10" height="8" transform="rotate(160 335 370)" color="#9ed681"/>
+<line x1="348" y1="363" x2="345" y2="370" class="leaf-stem"/>
+<use href="#leaf" x="345" y="370" width="10" height="8" transform="rotate(-160 345 370)" color="#9ed681"/>
+<line x1="335" y1="383" x2="338" y2="390" class="leaf-stem"/>
+<use href="#leaf" x="338" y="390" width="10" height="8" transform="rotate(160 338 390)" color="#9ed681"/>
+<line x1="345" y1="383" x2="342" y2="390" class="leaf-stem"/>
+<use href="#leaf" x="342" y="390" width="10" height="8" transform="rotate(-160 342 390)" color="#9ed681"/>
+</symbol>
+
+<symbol id="vine-world" viewBox="0 0 680 720" overflow="visible">
+<path d="M 322 420 L 318 440 L 322 462 L 316 482 L 322 495" class="vine-main"/>
+<path d="M 358 420 L 362 440 L 358 462 L 364 482 L 358 495" class="vine-main"/>
+<path d="M 318 440 L 302 444 L 286 448" class="vine-branch"/>
+<path d="M 362 440 L 378 444 L 394 448" class="vine-branch"/>
+<path d="M 322 462 L 306 466 L 292 470" class="vine-branch"/>
+<path d="M 358 462 L 374 466 L 388 470" class="vine-branch"/>
+<path d="M 316 482 L 302 486 L 288 490" class="vine-branch"/>
+<path d="M 364 482 L 378 486 L 392 490" class="vine-branch"/>
+<path d="M 318 440 L 332 443" class="vine-branch"/>
+<path d="M 362 440 L 348 443" class="vine-branch"/>
+<path d="M 322 462 L 335 465" class="vine-branch"/>
+<path d="M 358 462 L 345 465" class="vine-branch"/>
+<line x1="286" y1="448" x2="278" y2="442" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="278" y="442" width="11" height="9" transform="rotate(-90 278 442)" color="#a87838"/>
+<line x1="394" y1="448" x2="402" y2="442" class="leaf-stem"/>
+<use href="#leaf" x="402" y="442" width="13" height="10" transform="rotate(90 402 442)" color="#5cb84a"/>
+<line x1="292" y1="470" x2="284" y2="466" class="leaf-stem"/>
+<use href="#leaf" x="284" y="466" width="12" height="10" transform="rotate(-90 284 466)" color="#7ac963"/>
+<line x1="388" y1="470" x2="396" y2="466" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="396" y="466" width="11" height="9" transform="rotate(90 396 466)" color="#a87838"/>
+<line x1="288" y1="490" x2="280" y2="494" class="leaf-stem"/>
+<use href="#leaf" x="280" y="494" width="13" height="10" transform="rotate(-100 280 494)" color="#5cb84a"/>
+<line x1="392" y1="490" x2="400" y2="494" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="400" y="494" width="11" height="9" transform="rotate(100 400 494)" color="#a87838"/>
+<line x1="302" y1="444" x2="296" y2="450" class="leaf-stem"/>
+<use href="#leaf" x="296" y="450" width="11" height="9" transform="rotate(-120 296 450)" color="#5cb84a"/>
+<line x1="378" y1="444" x2="384" y2="450" class="leaf-stem"/>
+<use href="#leaf" x="384" y="450" width="11" height="9" transform="rotate(120 384 450)" color="#7ac963"/>
+<line x1="306" y1="466" x2="300" y2="473" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="300" y="473" width="9" height="7" transform="rotate(-120 300 473)" color="#a87838"/>
+<line x1="374" y1="466" x2="380" y2="473" class="leaf-stem"/>
+<use href="#leaf" x="380" y="473" width="11" height="9" transform="rotate(120 380 473)" color="#5cb84a"/>
+<line x1="302" y1="486" x2="296" y2="493" class="leaf-stem"/>
+<use href="#leaf" x="296" y="493" width="11" height="9" transform="rotate(-120 296 493)" color="#7ac963"/>
+<line x1="378" y1="486" x2="384" y2="493" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="384" y="493" width="9" height="7" transform="rotate(120 384 493)" color="#a87838"/>
+<line x1="332" y1="443" x2="335" y2="450" class="leaf-stem"/>
+<use href="#leaf" x="335" y="450" width="10" height="8" transform="rotate(160 335 450)" color="#9ed681"/>
+<line x1="348" y1="443" x2="345" y2="450" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="345" y="450" width="9" height="7" transform="rotate(-160 345 450)" color="#a87838"/>
+<line x1="335" y1="465" x2="338" y2="472" class="leaf-stem-dry"/>
+<use href="#leaf-dry" x="338" y="472" width="9" height="7" transform="rotate(160 338 472)" color="#a87838"/>
+<line x1="345" y1="465" x2="342" y2="472" class="leaf-stem"/>
+<use href="#leaf" x="342" y="472" width="10" height="8" transform="rotate(-160 342 472)" color="#9ed681"/>
+</symbol>
+
+<symbol id="intent-school" viewBox="0 0 680 720" overflow="visible">
+<path d="M 290 340 Q 295 320 305 305" class="intent-vine"/>
+<path d="M 380 340 Q 375 320 365 305" class="intent-vine"/>
+<path d="M 335 340 Q 333 322 332 305" class="intent-vine"/>
+</symbol>
+
+</defs>
+</svg>
+
+<section class="chapter">
+<h2>第一章　母</h2>
+<p>最初の認識は、たいていの人間にとって、母からである。ヒロシにとってもそうだった。</p>
+<p>乳幼児として、ヒロシは母なしには生きられなかった。母がいないと泣いた。母にもらったスヌーピーのぬいぐるみを抱いて、泣きながら母の帰りを待つ写真が、いまも残っている。坂の上の墓地の隣にある古い木造屋で、母が五右衛門風呂を沸かしている姿を、ヒロシは思い出す。</p>
+<p>自我が芽生え、反抗期もあり、三人兄弟を育てた母には苦労もあったはずだ。ヒロシが母を泣かせたこともあった。</p>
+<p>そして、母も人間だった。熱も出した、弱音も吐いた。ヒロシはそれを思春期に知った。</p>
+<p>親子は、無敵の親が子を助けるというだけの構造ではない。親もまた弱さも波もある人間であり、波がありながらも必死で外敵から子を守っているだけなのだ。子もまた家族の一員として親を支えていく。そして、返しきれぬ恩を、次世代に送っていく。</p>
+
+<div class="scene">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="lamp1" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0%" stop-color="#d4a554" stop-opacity="0.55"/>
+<stop offset="100%" stop-color="#d4a554" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<circle cx="160" cy="100" r="90" fill="url(#lamp1)"/>
+<rect x="138" y="80" width="44" height="58" fill="none" stroke="#7a7563" stroke-width="0.8" opacity="0.6"/>
+<line x1="138" y1="100" x2="182" y2="100" stroke="#7a7563" stroke-width="0.5" opacity="0.5"/>
+<line x1="160" y1="80" x2="160" y2="138" stroke="#7a7563" stroke-width="0.5" opacity="0.5"/>
+<ellipse cx="160" cy="78" rx="16" ry="3" fill="#7a7563" opacity="0.3"/>
+<path d="M 152 75 Q 156 65 160 70 Q 164 65 168 75" fill="none" stroke="#a8a394" stroke-width="0.6" opacity="0.5"/>
+</svg>
+</div>
+
+<div class="coda">
+<p>思春期に芽吹いたものが、最初の蔦になることを、当時のヒロシは知らない。</p>
+<span class="stamp">家層、点火</span>
+</div>
+</section>
+
+<section class="chapter">
+<h2>第二章　学校教育</h2>
+<p>ヒロシは、小学校から大学まで、一貫して公立学校で育った。</p>
+<p>中学・高校のヒロシが嫌っていたものは、はっきりしていた。意味のない暗記。実用を想定しない理数科。一つの尺度で偏差値を競うだけの進路選択。<strong>目的のない能力強化、目的のない競争</strong>。意味への思考停止を求められるような鍛錬。高校までの勉強は、ヒロシにとって偏差値攻略ゲームでしかなかった。</p>
+<p>大学に入って、よく生きるための教養課程の授業に出るようになって、ヒロシは初めて、知的好奇心を刺激された。それまで学校で感じてきたことは、ヒロシの思い込みではなかった。教育という営みは、本来こちらの方向にあるはずだ、とヒロシは確信した。</p>
+<p>教育は強ければよいというものではない。どんな人間を育てるかを見誤っていれば、有害でさえある。教育観は国家レベルで間違いうる、危ういものだ。ヒロシは強い危機感を持っていた。</p>
+<p>学校が嫌いだったというその直感は、その後の仕事での力の発揮の仕方でも裏付けられたし、大人になってから取り組む国際比較の中でも、日本の最大の課題として、はっきり浮かび上がることになる。</p>
+
+<div class="scene">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="40" width="240" height="140" fill="none" stroke="#5a5547" stroke-width="0.6" opacity="0.5"/>
+<line x1="40" y1="80" x2="280" y2="80" stroke="#5a5547" stroke-width="0.4" opacity="0.4"/>
+<line x1="40" y1="120" x2="280" y2="120" stroke="#5a5547" stroke-width="0.4" opacity="0.4"/>
+<line x1="40" y1="160" x2="280" y2="160" stroke="#5a5547" stroke-width="0.4" opacity="0.4"/>
+<line x1="100" y1="40" x2="100" y2="180" stroke="#5a5547" stroke-width="0.4" opacity="0.4"/>
+<line x1="160" y1="40" x2="160" y2="180" stroke="#5a5547" stroke-width="0.4" opacity="0.4"/>
+<line x1="220" y1="40" x2="220" y2="180" stroke="#5a5547" stroke-width="0.4" opacity="0.4"/>
+<line x1="55" y1="55" x2="265" y2="165" stroke="#c98080" stroke-width="0.8" opacity="0.45"/>
+<line x1="265" y1="55" x2="55" y2="165" stroke="#c98080" stroke-width="0.8" opacity="0.45"/>
+</svg>
+</div>
+
+<div class="coda">
+<p>恩を運んでこなかった層にも、確かに、何かが起きていた。</p>
+<span class="stamp">組層に陰</span>
+</div>
+</section>
+
+<section class="chapter">
+<h2>第三章　十九歳のあの一年</h2>
+<p>学校教育の不毛さを思い、ヒロシは十九歳、大学二年のときに休学を決意した。</p>
+<p>休学した一年で、ヒロシは二つのことをした。</p>
+<p>一つ目は、ある建築家のもとに住み込みで弟子入りすることだった。建築家は高校卒で世界的な建築家になり、東大教授にもなった人だった。学校を信じていないヒロシが、その人の経歴に惹かれたのは自然だった。ヒロシは建築家から、勉強しながら自分で感じ、考え抜いて価値を作ることの強さを学んだ。それを自分との共通点として自信を持って進められるきっかけになった。</p>
+<p>二つ目は、世界三十カ国のバックパッカー旅行だった。途上国を中心に世界を放浪して、ヒロシは驚愕した。日本で育ち、暮らすことが、他国と比べて、あまりにもイージーで、あまりにも快適だった。それまでヒロシは、日本の暮らしやすさ、インフラ、教育水準、経済優位を、まったく認識できていなかった。</p>
+<p>ヒロシは、自分のそれまでの優位の出所を計算し直すことになった。ヒロシの標準規格での優位性は、日本のインフラの上のものだった。九割は日本に生まれたから到達したもので、残りの一割を努力差分で勝ち抜いた程度の誤差でしかない。ヒロシはそう思い知った。</p>
+<p>そして、人間は、それがない世界を経験しない限り、受けた恩を自覚することが難しい。ヒロシはそのことを、自分の体で知った。</p>
+<p>この気づきが、後年まで続くヒロシの知恩感覚の源流になった。</p>
+
+<div class="scene">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="flame3" cx="0.5" cy="0.55" r="0.5">
+<stop offset="0%" stop-color="#f4c576" stop-opacity="0.85"/>
+<stop offset="40%" stop-color="#d4a554" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#d4a554" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<circle cx="160" cy="110" r="90" fill="url(#flame3)"/>
+<path d="M 158 80 Q 154 90 156 100 Q 160 105 164 100 Q 166 90 162 80 Q 160 76 158 80 Z" fill="#f4c576"/>
+<rect x="155" y="105" width="10" height="55" fill="#7a7563" opacity="0.7"/>
+</svg>
+</div>
+
+<div class="coda">
+<p>ない世界を経験して初めて、ある世界が見える。<br>これは特定の層の話ではなく、すべての層に効いていく道具だった。</p>
+<span class="stamp">国層、点火 ／ メタ認識の獲得</span>
+</div>
+
+<div class="tower">
+<svg viewBox="0 0 680 720" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>第三章末　Your Tower of Life</title>
+<text x="40" y="50" class="tower-title">第三章末　Your Tower of Life</text>
+<text x="40" y="72" class="tower-subtitle">国層に蔦が大きく発芽。</text>
+<g transform="translate(0, 30)">
+<rect x="280" y="120" width="120" height="75" class="area-mature"/>
+<rect x="280" y="270" width="120" height="75" class="area-shadow"/>
+<rect x="280" y="345" width="120" height="75" class="area-mature"/>
+<use href="#tower-skeleton"/>
+<use href="#vine-family"/>
+<use href="#shadow-school"/>
+<use href="#vine-nation"/>
+<use href="#leaves-nation-green"/>
+<g class="figure" transform="translate(340, 120)">
+<circle cx="0" cy="-32" r="6"/>
+<path d="M -8 -23 Q -8 -26 -5 -26 L 5 -26 Q 8 -26 8 -23 L 8 -10 Q 8 -8 6 -8 L 2 -8 L 2 0 Q 2 1 1 1 L -1 1 Q -2 1 -2 0 L -2 -8 L -6 -8 Q -8 -8 -8 -10 Z"/>
+</g>
+<text x="265" y="118" text-anchor="end" class="layer-label-active">我</text>
+<text x="265" y="162" text-anchor="end" class="layer-label-active">家</text>
+<text x="265" y="237" text-anchor="end" class="layer-label">村</text>
+<text x="265" y="312" text-anchor="end" class="layer-label-shadow">組</text>
+<text x="265" y="387" text-anchor="end" class="layer-label-active">国</text>
+<text x="265" y="462" text-anchor="end" class="layer-label">世</text>
+<text x="265" y="537" text-anchor="end" class="layer-label">森</text>
+<text x="415" y="118" class="layer-label-active">self</text>
+<text x="415" y="162" class="layer-label-active">family</text>
+<text x="415" y="237" class="layer-label">village</text>
+<text x="415" y="312" class="layer-label-shadow">school</text>
+<text x="415" y="387" class="layer-label-active">nation</text>
+<text x="415" y="462" class="layer-label">world</text>
+<text x="415" y="537" class="layer-label">forest</text>
+</g>
+</svg>
+</div>
+</section>
+
+<section class="chapter">
+<h2>第四章　組織の中で、恩を知る</h2>
+<p>二十代のヒロシは、自分の集中力、習熟力、独創性で、相対パフォーマンス優位を築くゲームのなかにいた。目標を攻略する戦略と、そこへの必要努力をこなすマシーン性能を、ヒロシは誇りにしていた。</p>
+<p>三十代になり、組織を率いる立場になって、ヒロシは組織パフォーマンスの重要性を知ることになる。個人がいくら走れても、組織が回らなければ、何一つ持続しない。マネジメントというのは、見えないところで誰かが日々判断と調整を続けている営みだった。それを引き受ける側に回って初めて、ヒロシはその大変さを知った。組織は自然に存在しているのではない。誰かが日々、その輪郭を保ち続けているからこそ、明日も在る。</p>
+<p>新興大企業という、急速に立ち上がり、急速に大きくなった組織の内側で、ヒロシはその脆さと、それでも維持しようとする人間たちの存在を、組織長として日々見ることになった。</p>
+<p>組織を去っていく人間の中に、受け取った恩を残さず、外にだけ批判を残していく者がいた。ヒロシはそれを恩知らずだと感じ、強い憤りを覚えた。</p>
+<p>そして、ある瞬間、ヒロシは気づいた。</p>
+<p>二十代でパフォーマンス天狗だった自分こそが、恩知らずだったのだと。当時の上司、当時のマネジメント、当時の組織。彼らがどれだけ自分を支えていたか、自分の発揮を可能にしていたか、当時の自分はまったく見えていなかった。マシーン性能だと思っていたものの大半は、土台の上での発揮だった。</p>
+<p>恩を知るのは、その不在を経験することの他に、自分が支える側に回ったときなのだ。親の恩、子知らず、というやつだ。</p>
+<p>同時に、ヒロシは、関わり方の多様性も知った。すべての人が同じ熱で組織に関わるわけではない。深く関わる人、浅く関わる人、通り過ぎていく人。組織はそうした多様な関わり方の総体として、辛うじて成立し続けている。</p>
+
+<div class="scene">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="160" cy="100" r="60" fill="none" stroke="#5cb84a" stroke-width="0.6" opacity="0.3"/>
+<circle cx="100" cy="100" r="14" fill="none" stroke="#7a7563" stroke-width="0.7" opacity="0.6"/>
+<circle cx="220" cy="100" r="14" fill="none" stroke="#7a7563" stroke-width="0.7" opacity="0.6"/>
+<circle cx="160" cy="55" r="14" fill="none" stroke="#7a7563" stroke-width="0.7" opacity="0.6"/>
+<circle cx="160" cy="145" r="14" fill="none" stroke="#7a7563" stroke-width="0.7" opacity="0.6"/>
+<g stroke="#5cb84a" stroke-width="0.7" fill="none" opacity="0.55" marker-end="url(#arrow4)">
+<line x1="110" y1="100" x2="148" y2="100"/>
+<line x1="210" y1="100" x2="172" y2="100"/>
+<line x1="160" y1="65" x2="160" y2="92"/>
+<line x1="160" y1="135" x2="160" y2="108"/>
+</g>
+<defs>
+<marker id="arrow4" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto">
+<path d="M 0 0 L 6 3 L 0 6 z" fill="#5cb84a" opacity="0.7"/>
+</marker>
+</defs>
+<circle cx="160" cy="100" r="4" fill="#e8e3d4"/>
+</svg>
+</div>
+
+<div class="coda">
+<p>支える側に回って初めて、支えられていた自分が見える。<br>親の恩、子知らず。</p>
+<span class="stamp">我層・組層、知恩の遅れた成熟</span>
+</div>
+</section>
+
+<section class="chapter">
+<h2>第五章　家業の盛衰</h2>
+<p>ヒロシは、経済優位の恩恵を受けてきた方だった。円が強かった日本で、中規模の会社経営をする家で育ち、比較的高給な職業に就いて、お金で苦労した記憶がほとんどない。だから感謝も薄かった。</p>
+<p>家業は、家と組のあいだにある層だった。家族でありながら、ひとつの組織でもある。ヒロシにとって家業とは、家でもあり組でもある層として、後から両側から認識されることになる。</p>
+<p>二十代で、親の会社は倒産し、生活水準が激変した一族の姿を見ることになる。</p>
+<p>経営という営みは、華やかでもあるが、必勝の営みではない。持続させ続けられるかどうかは、極めて危ういものだ。だから必死の努力も戦略も必要だし、その対価も高くなりうる。ヒロシは、資金調達を喜ぶ経営者を見て、強い違和感や危機感を感じることがある。経営は、成立させ続けることが、何より大変で、何より価値のあることなのだと思う。</p>
+<p>かつて裕福だった日本は、数十年で貧乏な国になった。自分が貧乏になって初めて知る裕福の価値、というものもありそうだ。そしてもう一度裕福に憧れ、努力を再開するというサイクルが回り始めるのだろう。</p>
+
+<div class="scene">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+<rect x="100" y="60" width="120" height="100" fill="none" stroke="#7a7563" stroke-width="0.7" opacity="0.55"/>
+<rect x="100" y="60" width="120" height="20" fill="#7a7563" opacity="0.15"/>
+<line x1="100" y1="80" x2="220" y2="80" stroke="#7a7563" stroke-width="0.5" opacity="0.5"/>
+<line x1="105" y1="85" x2="215" y2="85" stroke="#7a7563" stroke-width="0.4" opacity="0.4"/>
+<line x1="105" y1="90" x2="215" y2="90" stroke="#7a7563" stroke-width="0.4" opacity="0.4"/>
+<line x1="105" y1="95" x2="215" y2="95" stroke="#7a7563" stroke-width="0.4" opacity="0.4"/>
+<line x1="105" y1="100" x2="215" y2="100" stroke="#7a7563" stroke-width="0.4" opacity="0.4"/>
+<rect x="148" y="105" width="24" height="55" fill="none" stroke="#7a7563" stroke-width="0.6" opacity="0.5"/>
+<line x1="148" y1="160" x2="172" y2="160" stroke="#a87838" stroke-width="1" opacity="0.6"/>
+<text x="160" y="155" text-anchor="middle" font-size="9" fill="#a87838" opacity="0.7" font-family="serif" font-style="italic">閉</text>
+</svg>
+</div>
+
+<div class="coda">
+<p>失われたあとに、ようやく見える。<br>けれど見えたあとも、立ち上がろうとする力が残ることもある。</p>
+<span class="stamp">家業層、点火（葉に翳り）</span>
+</div>
+</section>
+
+<section class="chapter">
+<h2>第六章　時代の技術</h2>
+<p>ヒロシは、テクノロジーの利便性、人生や思考への多大な影響を、強く感じる世代だった。それがなかった時代から、ある時代への移行を、ヒロシは経験した。インターネットとAIがなければ、ヒロシの人生はまったく違ったものになっていた。より創造的で深い時間を過ごすイネイブラーとして、ヒロシはテクノロジーから決定的な影響を受けた。</p>
+<p>同時に、ヒロシはそのテクノロジーの使われ方に違和感を抱くようになった。スポイルエコノミーにおけるスポイルテックとして、人間の集中や注意を奪う方向で使われる側面が、無視できない大きさで存在していた。</p>
+<p>技術進化の高速化に伴って、速度制限や活用制限は、社会ルールとして整備される必要がある。自動車の運転免許や速度制限のように。ヒロシはそう考えるようになった。</p>
+
+<div class="scene">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+<g stroke="#5cb84a" stroke-width="0.6" fill="none" opacity="0.6">
+<line x1="60" y1="100" x2="120" y2="60"/>
+<line x1="60" y1="100" x2="120" y2="100"/>
+<line x1="60" y1="100" x2="120" y2="140"/>
+<line x1="120" y1="60" x2="200" y2="80"/>
+<line x1="120" y1="100" x2="200" y2="100"/>
+<line x1="120" y1="140" x2="200" y2="120"/>
+<line x1="200" y1="80" x2="260" y2="100"/>
+<line x1="200" y1="100" x2="260" y2="100"/>
+<line x1="200" y1="120" x2="260" y2="100"/>
+</g>
+<g fill="#5cb84a" opacity="0.7">
+<circle cx="60" cy="100" r="3"/>
+<circle cx="120" cy="60" r="3"/>
+<circle cx="120" cy="100" r="3"/>
+<circle cx="120" cy="140" r="3"/>
+<circle cx="200" cy="80" r="3"/>
+<circle cx="200" cy="100" r="3"/>
+<circle cx="200" cy="120" r="3"/>
+<circle cx="260" cy="100" r="4"/>
+</g>
+<g fill="#a87838" opacity="0.65">
+<circle cx="120" cy="60" r="2.5"/>
+<circle cx="200" cy="120" r="2.5"/>
+</g>
+</svg>
+</div>
+
+<div class="coda">
+<p>同じ技術が、人を解き放ちもすれば、奪いもする。<br>葉の色は、ひとつの枝の中で混じり始めた。</p>
+<span class="stamp">世層、点火</span>
+</div>
+</section>
+
+<section class="chapter">
+<h2>第七章　社会と個人</h2>
+<p>ヒロシは、いま、社会と個人の関係のあり方に、強い関心と危機感を持っている。</p>
+<p>これまでの章でヒロシが層ごとに芽吹かせてきた認識は、ある時点で互いに繋がりはじめた。家族の支え、家業の脆さ、日本という国の前提、組織を維持する労力、テクノロジーが人間に及ぼす作用、学校教育の方向性。これらは別々の話ではなく、一つの問いの異なる面だった。</p>
+<p>社会のしくみが本当によく回っているとき、それを動かしている人たちへの感謝はもっとも薄くなる。よく機能している仕組みほど、誰にも見られないまま摩耗していく。ヒロシは十九歳のあの一年で、この構造を自分の身体で知った。それ以来、家のスケールでも、組織のスケールでも、世代のスケールでも、同じ構造に何度も出会ってきた。これは普遍的な認識の構造だった。</p>
+<p>そしていまヒロシは、その構造を社会のスケールで取り戻そうとしている。失われる前に見せること。失われた後に立ち上がる力を、少しでも残しておくこと。これが、ヒロシが後半生を使おうとしている仕事になった。</p>
+<p>学校教育の問題は、まだ手つかずのまま残っていた。十九歳のヒロシが抱えた違和感は、後の国際比較の中で日本の最大の課題として再び浮かび上がっている。ヒロシはこの問題の解決に、自分の後半生を使っていきたいと思っている。</p>
+
+<div class="coda">
+<p>別々の発見だと思っていたものが、ひとつの構造の異なる面だった。<br>陰のままだった層に、初めて意志が向く。</p>
+<span class="stamp">層が繋がる ／ 物語の円環</span>
+</div>
+
+<div class="tower">
+<svg viewBox="0 0 680 720" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>第七章末　Your Tower of Life</title>
+<text x="40" y="50" class="tower-title">第七章末　Your Tower of Life</text>
+<text x="40" y="72" class="tower-subtitle">層が繋がる。国の葉に翳り。学校陰に意志の枝。</text>
+<g transform="translate(0, 30)">
+<rect x="280" y="90" width="120" height="30" class="area-self"/>
+<rect x="280" y="120" width="120" height="75" class="area-mature"/>
+<rect x="280" y="270" width="120" height="38" class="area-shadow"/>
+<rect x="280" y="308" width="120" height="37" class="area-mature"/>
+<rect x="280" y="345" width="120" height="75" class="area-mature"/>
+<rect x="280" y="420" width="120" height="75" class="area-mature"/>
+<use href="#tower-skeleton"/>
+<use href="#vine-self"/>
+<use href="#vine-family"/>
+<use href="#shadow-school-half"/>
+<use href="#intent-school"/>
+<use href="#vine-family-business"/>
+<use href="#vine-nation"/>
+<use href="#leaves-nation-aged"/>
+<use href="#vine-workplace"/>
+<use href="#vine-world"/>
+<g class="figure" transform="translate(340, 120)">
+<circle cx="0" cy="-32" r="6"/>
+<path d="M -8 -23 Q -8 -26 -5 -26 L 5 -26 Q 8 -26 8 -23 L 8 -10 Q 8 -8 6 -8 L 2 -8 L 2 0 Q 2 1 1 1 L -1 1 Q -2 1 -2 0 L -2 -8 L -6 -8 Q -8 -8 -8 -10 Z"/>
+</g>
+<text x="265" y="118" text-anchor="end" class="layer-label-active">我</text>
+<text x="265" y="162" text-anchor="end" class="layer-label-active">家</text>
+<text x="265" y="237" text-anchor="end" class="layer-label">村</text>
+<text x="265" y="312" text-anchor="end" class="layer-label-mixed">組</text>
+<text x="265" y="387" text-anchor="end" class="layer-label-active">国</text>
+<text x="265" y="462" text-anchor="end" class="layer-label-active">世</text>
+<text x="265" y="537" text-anchor="end" class="layer-label">森</text>
+<text x="415" y="118" class="layer-label-active">self</text>
+<text x="415" y="162" class="layer-label-active">family</text>
+<text x="415" y="237" class="layer-label">village</text>
+<text x="415" y="312" class="layer-label-mixed">org</text>
+<text x="415" y="387" class="layer-label-active">nation</text>
+<text x="415" y="462" class="layer-label-active">world</text>
+<text x="415" y="537" class="layer-label">forest</text>
+</g>
+</svg>
+</div>
+</section>
+
+<section class="afterword">
+<h2>あとがきにかえて — Your Tower of Life の見方</h2>
+<p class="afterword-lead">これはヒロシという一人の人間の、認識の物語でした。<br>四十八歳のヒロシが、ここまでの人生を振り返ったものです。</p>
+
+<p>このあとがきでは、物語の中で起きていたことを、構造として整理しておきます。読み終わった人が、自分の人生にこの構造を当てはめてみるための地図として。</p>
+
+<h3>二つのタワー</h3>
+<p>人は皆、生まれた瞬間からひとつのタワーの上に立っています。</p>
+<p>タワーは七つの層からできています。最も近い層から、自分自身（<strong>我</strong>）、家族（<strong>家</strong>）、地域共同体（<strong>村</strong>）、組織（<strong>組</strong>）、国家（<strong>国</strong>）、人類社会（<strong>世</strong>）、生命圏（<strong>森</strong>）。自分は頂上に立っていて、足元に向かって層が広がっている。</p>
+<p>このタワーは、本人が気づこうが気づくまいが、確かに存在しています。家族は私が認識する前から私を支えていた。国は私が学ぶ前から私を保護していた。これを<strong>現実タワー</strong>と呼びます。</p>
+<p>もうひとつのタワーがあります。それは本人の認識の中に育つ<strong>認識タワー</strong>です。</p>
+<p>現実タワーは先に在る。認識タワーは後から育つ。生まれたばかりの赤ん坊は、現実タワーの頂上に立っているが、その存在をまだ知らない。成長するにつれて、ある層に対して認識が芽吹く。蔦が伸びるように、層を覆っていく。</p>
+<p>物語の中で、章ごとにヒロシの認識タワーに蔦が伸びていったのは、これが起きていたからです。</p>
+
+<h3>蔦に込めた三つの軸</h3>
+<p>蔦の表現には、三つの軸があります。</p>
+
+<p><strong>枝の有無 — 重要性の認識。</strong> 枝が伸びているということは、その層の重要性に気づいたという意味です。「ここに何かが在る」「自分はここに繋がっている」という構造的な気づき。枝がない層は、まだ自分の中で意味を持っていない層です。</p>
+
+<p><strong>葉の有無 — 知恩の充足。</strong> 枝に葉がついて初めて、認識は質的に体に落ちます。葉は感謝です。「在ることへの感謝が体に染みている」状態。重要性は分かっていても葉がついていないこともあり得ます。「知っているけれど、有り難みは体に来ていない」という状態です。</p>
+
+<p>そして葉は、その層が「ない世界」「失われうる世界」を含意するからこそ、つきます。当たり前に在り続けると思っているものに、人は感謝しません。葉は、恩と変——変化や危機にさらされている可能性——が同時に見えたときに、初めて伸びます。</p>
+
+<p><strong>葉の色 — 健康度。</strong> 葉の色が、その層の現実が今どういう状態かを示します。<span class="em-green">緑は健全</span>。<span class="em-amber">茶色は枯れ</span>。茶色になった葉は、かつてあった健全さが失われつつある、あるいは既に失われた部分です。ヒロシの家業層の蔦に茶色が混じっているのは、倒産という出来事が現実タワーを傷つけたからです。</p>
+
+<h3>三つの状態</h3>
+<p>この組み合わせから、層には三つの主要な状態があります。</p>
+
+<p><strong>未認識</strong> — 鉄骨だけ、蔦がない。本人がまだその層に気づいていない。</p>
+
+<p><strong>陰</strong> — 重要性が否定的にしか認識されていない。ヒロシにとっての学校層がこれです。「危機・有害性」だけが見えていて、「恩」は発芽していない。蔦は伸びず、代わりに<span class="em-red">陰</span>がさしている。</p>
+
+<p><strong>点火</strong> — 重要性に気づき、恩を知り、同時にその層が変化や危機にさらされていることを知ることです。</p>
+<p>感謝だけでは、まだ点火しない。危機感だけでも、まだ点火しない。恩と変が同時に見えたとき、人はその層に対して自分の役割を引き受け始めます。</p>
+<p>第二章のヒロシにとっての学校層は、変だけが見えて、恩は来なかった。だから蔦は伸びず、陰だけが残った。第三章の十九歳のヒロシにとっての国層は、海外で「ない世界」を経験して初めて、恩と変が同時に立ち上がった。だから蔦が一気に伸び、点火した。点火が起きると、本人の関わり方が変わります。何かを引き受け始めます。役割が立ち上がります。</p>
+
+<h3>ヒロシの点火順序</h3>
+<p>物語を振り返ると、ヒロシの認識タワーは次の順で育ちました。</p>
+<p>第一章で<strong>家</strong>層に最初の蔦が伸びた。母を通して、受けた恩を次世代に送るという基本姿勢が獲得された。第二章で<strong>学校</strong>（組層の一部）に陰が刺した。変だけが発芽し、恩は来ない。第三章で<strong>国</strong>層に蔦が大きく伸び、「ない世界を経験しないと恩は見えない」という<strong>第一の知恩経路</strong>が獲得された。</p>
+<p>第四章で<strong>我</strong>層と<strong>組</strong>層（職場）に同時に蔦。組織を率いる側に回って初めて、組織を維持する労力と、二十代の自分が支えられていたことに気づく。「支える側に回って初めて、支えられていた自分が見える」という<strong>第二の知恩経路</strong>。第五章で<strong>家業</strong>（家と組のあいだの層）に蔦、葉の多くは茶色。第六章で<strong>世</strong>層に蔦、葉は緑と茶の混在。</p>
+<p>第七章で、すべての層が一つの構造の異なる現れだったと気づく。<strong>学校</strong>層の陰に、初めて意志が向きはじめる。</p>
+<p>人の認識タワーは、たいてい複数の章に渡って、段階的に育っていきます。すべての層が点火するわけではありません。ヒロシの場合、村層と森層は四十八歳の現在も未点火のままです。これは欠損ではなく、人生の正直な現在地です。</p>
+
+<h3>なぜこの構造を見るのか</h3>
+<p>この構造を見ることで、人は二つのことを得ます。</p>
+<p>ひとつ。自分が<strong>何に支えられているか</strong>を見ることができる。下方向に伸びた蔦のすべてが、自分を支える層への気づきです。十九歳のヒロシが世界三十カ国を歩いて初めて知ったのは、自分が日本に支えられていたという事実でした。</p>
+<p>ふたつ。自分が<strong>何を引き受けているか／何を引き受けようとしているか</strong>を見ることができる。点火した層は、自分の関わり方が変わる場所です。ヒロシの後半生の仕事は、第七章で立ち上がった意志の延長線上にあります。</p>
+<p>社会のしくみが本当によく回っているとき、それを動かしている人たちへの感謝はもっとも薄くなります。よく機能している仕組みほど、誰にも見られないまま摩耗していきます。</p>
+<p>これがヒロシが物語の終わりにたどり着いた認識でした。失われる前に見せること、失われた後に立ち上がる力を残しておくこと。それを自分の仕事として引き受ける。</p>
+<p>これが、この物語が問いかけている内容です。</p>
+
+<h3>あなたのタワー</h3>
+<p>頂上にあなたが立っている。足元には七つの層が広がっている。あなたの認識の蔦は、いまどこまで伸びていますか。葉はついていますか。葉の色はどうですか。</p>
+<p>未点火の層はありますか。陰のさしている層はありますか。</p>
+<p>これは答えるための問いではありません。立ち止まって自分の足元を見るための問いです。</p>
+
+<div class="app-callout">
+<p class="app-label">your tower diagnostic</p>
+<h3>あなたのタワーを診てみる</h3>
+<p>各層について、いまの自分の重要性認識・知恩・健康度を診断するアプリを用意しています。<br>ヒロシのタワーと並べて、自分のタワーがどう育っているかを見ることができます。</p>
+<a href="https://kuniakimat.github.io/sons/" class="app-link" target="_blank" rel="noopener">診断アプリへ</a>
+</div>
+
+</section>
+
+<footer class="outro">
+<p class="signature">Your Tower of Life</p>
+<p>S ON S フレーム導入小説</p>
+</footer>
+
+</div>
+</body>
+</html>
